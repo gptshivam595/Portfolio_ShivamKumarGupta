@@ -33,5 +33,3 @@ The website is fully responsive and built using **HTML, CSS, JavaScript**, and m
 
 ---
 
-## 📁 Folder Structure
-
