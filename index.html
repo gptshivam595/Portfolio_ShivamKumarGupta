@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shivam Kumar Gupta Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Shivam's Branding & Layout Adjustments */
+.about-mf .box-shadow-full { padding-top: 4rem; padding-bottom: 4rem; }
+.about-mf .about-img { margin-bottom: 2rem; }
+.skill-mf .progress { margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem; }
+.skill-mf .progress .progress-bar { height: .7rem; background-color: #ffbd39; }
+
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
+.zoom-effect:hover { transform: scale(1.1); }
+
+/* Responsive adjustments for the new Hero Section */
+@media (max-width: 768px) {
+    .hero .row { padding: 50px 0 !important; text-align: center; }
+    .hero img { margin-top: 30px; max-width: 60% !important; }
+}
+</style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Shivam Kumar Gupta</a>
+          <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+              <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+              <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+              <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+              <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+              <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="home-section" class="hero"> 
+  <div class="home-slider owl-carousel"> 
+    <div class="slider-item"> 
+      <div class="overlay"></div> 
+      <div class="container"> 
+        <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between">
+
+          <!-- LEFT SIDE TEXT -->
+          <div class="col-md-7 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <div class="text">
+              <span class="subheading">Hello!</span>
+              <h1 class="mb-4 mt-3">I'm <span>Shivam Kumar Gupta</span></h1>
+
+              <div id="typing-animation"></div>
+              <script>
+                const typingAnimationElement = document.getElementById('typing-animation');
+                const typingTexts = ['Fresher       ', 'Backend Developer '];
+
+                function playTypingAnimation(text) {
+                  typingAnimationElement.textContent = '';
+                  for (let i = 0; i < text.length; i++) {
+                    setTimeout(() => {
+                      typingAnimationElement.textContent += text[i];
+                    }, i * 150);
+                  }
+                  setTimeout(() => {
+                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                  }, text.length * 150 + 2000);
+                }
+                playTypingAnimation(typingTexts[0]);
+              </script>
+
+              <br><br>
+              <h2>Final Year B.Tech at BIT Mesra</h2>
+
+              <p>
+                <a href="https://github.com/gptshivam595" class="btn btn-primary py-3 px-4">GitHub</a>
+                <a href="https://linkedin.com/in/shivam-guptabit" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE ROUND IMAGE — FIX -->
+          <div class="col-md-5 position-relative">
+            <img src="images/about-me.png"
+                 class="img-fluid rounded-circle shadow-lg"
+                 style="
+                   position: absolute;
+                   right: 0;
+                   top: 50%;
+                   transform: translateY(-50%);
+                   max-width: 85%;
+                   border: 6px solid #ffbd39;
+                   z-index: -1;
+                 "
+                 alt="Shivam Kumar Gupta">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                      <div class="about-img">
+                                        <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Shivam Kumar Gupta">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-7">
+                                      <div class="about-info">
+                                        <p><span class="title-s">Name: </span> <span>Shivam Kumar Gupta</span></p>
+                                        <p><span class="title-s">Job Role: </span> <span>Fresher</span></p>
+                                        <p><span class="title-s">Experience: </span> <span>Research Intern (UIT NORWAY)</span></p>
+                                        <p><span class="title-s">Graduation: </span> <span> BIT Mesra, Ranchi, Jharkhand, India</span></p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                <div class="skill-mf">
+                                    <p class="title-s">Skills</p>
+                                    <span>JAVA (Core & Advanced)</span> <span class="pull-right">80%</span>
+                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%;"></div></div>
+                                    
+                                    <span>SPRING BOOT & HIBERNATE</span> <span class="pull-right">80%</span>
+                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%"></div></div>
+                                    
+                                    <span>SQL (MySQL)</span> <span class="pull-right">85%</span>
+                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
+                                    
+                                    <span>DSA (300+ Solved)</span> <span class="pull-right">85%</span>
+                                    <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                        <div class="row justify-content-start pb-3">
+                            <div class="col-md-12 heading-section ftco-animate">
+                                <h1 class="big">About</h1>
+                                <h2 class="mb-4">About Me</h2>
+                                <p>Final Year B.Tech student at BIT Mesra (2026 Batch) with a dedicated focus on Backend Software Development. While my major is Mechanical Engineering, my professional competency lies in Java Development and Computer Science fundamentals.</p>
+                                <ul class="about-info mt-4 px-md-0 px-2">
+                                    <li class="d-flex"><span>Backend:</span> <span>Proficient in building scalable microservices using Java, Spring Boot, and Hibernate.</span></li>
+                                    <li class="d-flex"><span>Research:</span> <span>Experience optimizing computational algorithms during research internship at UiT Norway.</span></li>
+                                    <li class="d-flex"><span>Problem Solving:</span> <span>Solved 300+ DSA problems across LeetCode, GeeksForGeeks, Codechef, Hackerrank.</span></li>
+                                    <li class="d-flex"><span>Tech Stack:</span> <span>C++, Java, MySQL, Spring Boot, ReactJS, Docker, Git, Github.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                            <div class="text">
+                                <p class="mb-4">
+                                    <span class="number" data-number="200">0</span> <span>+</span>
+                                    <span>&nbsp; LeetCode Problems Solved</span>
+                                </p>
+                                <p><a href="https://leetcode.com/u/gptshivam595/" class="btn btn-primary py-3 px-3">LeetCode Profile</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        
+        <h1 class="big big-2">Resume</h1>
+        <h2 class="mb-4">Resume</h2>
+        <p>Targeting Java Developer, Software Development Engineer (SDE), and Backend Engineer roles.</p>
+
+        <!-- ⭐ Resume Button -->
+        <a href="https://drive.google.com/file/d/1igM91HYr-cPldFrgmVDgORlK44eoMWny/view?usp=drive_link"
+           class="btn btn-primary py-3 px-4 mt-3"
+           target="_blank">
+          View Resume
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+            <div class="row">
+                <h1 class="big-4">Experience</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+            
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="resume-wrap ftco-animate">
+                            <span class="date">May 2025 - July 2025</span>
+                            <h2>Research Intern</h2>
+                            <span class="position">UiT The Arctic University of Norway | Tromsø, Norway</span>
+                            <p class="mt-4">
+                                <ul>
+                                    <li>Engineered computational workflows to enhance 4D acoustic image reconstruction using BM4D filtering algorithms.</li>
+                                    <li>Analyzed large datasets of time-series scanned objects, improving signal-to-noise ratio in ultrasonic imaging.</li>
+                                    <li>Authored technical documentation and published findings in the Journal of Microscopy.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            <br><br>
+
+            <div class="row">
+                <h1 class="big-4">Education</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2022-2026</span>
+                        <h2>Bachelor of Technology</h2>
+                        <span class="position">Birla Institute of Technology (BIT), Mesra</span>
+                        <p class="mt-4">Major: Mechanical Engineering (Relevant Coursework: DSA, OOPs, DBMS, OS, Computer Networks).</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2020-2021</span>
+                        <h2>Guru Gobind Singh Public School</h2>
+                        <p class="mt-4">completed Class 12th.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Portfolio Projects</h2>
+            <p>Scalable applications built with modern Java frameworks and data structures.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-6 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/gptshivam595/BlogSpringApplication" class="block-20 zoom-effect" style="background-image: url('images/blogg.jpeg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">Full Stack Blog Application (Java/Spring Boot)</h3>
+                <p>Architected a scalable blogging platform with microservices principles, Spring Security (JWT), and Hibernate ORM.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/gptshivam595/Travel-Planner" class="block-20 zoom-effect" style="background-image: url('images/travel.jpeg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">Travel Planner (Dijkstra's Pathfinding)</h3>
+                <p>Interactive routing engine utilizing Dijkstra's algorithm to calculate shortest paths between cities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Reach Out</h2>
+            <p>I am currently seeking SDE Internships or Full-Time roles for the 2026 Batch!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
+                <h3 class="mb-4">Location</h3>
+                <p>BIT Mesra, Ranchi, India</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
+                <h3 class="mb-4">Contact</h3>
+                <p><a href="tel://9608465960">+91 9608465960</a></p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
+                <h3 class="mb-4">Email</h3>
+                <p><a href="mailto:gptshivam595@gmail.com">gptshivam595@gmail.com</a></p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center"><span class="icon-github"></span></div>
+                <h3 class="mb-4">GitHub</h3>
+                <p><a href="https://github.com/gptshivam595">github.com/gptshivam595</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Shivam Kumar Gupta</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
